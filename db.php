@@ -10,6 +10,6 @@
 	function dieuchinh($conn, $chuoi){
 		$thucthi = mysqli_query($conn, $chuoi); // thực thi sql
 		$kiemtra = mysqli_affected_rows($conn); // đếm số dòng đã thực thi
-		return $kiemtra; // trả về kết quả
+		return $kiemtra; // trả về kết quả nếu > 0 thì thành công ngược lại không thành công
 	}
 ?>
